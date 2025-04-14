@@ -35,9 +35,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       # Build the Docker image
-      - name: Build Docker image
+      - name: Build the Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/audio-visualizer:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/audio-visualizer:latest ./audio-visualizer
+
 
       # Push the Docker image to Docker Hub
       - name: Push Docker image
