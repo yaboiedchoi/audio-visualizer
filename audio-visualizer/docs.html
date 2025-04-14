@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="./styles/default-styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar has-shadow is-black">
+        <!-- logo / brand -->
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <!--<i class="fas fa-hotdog"></i>-->
+            <img src="media/images/EdwardChoiLogo.png" alt="Logo" style="max-height: 2.5rem">
+          </a>
+          <a class="navbar-burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+    
+        <div class="navbar-menu" id="nav-links">
+          <div class="navbar-start">
+            <a class="navbar-item is-hoverable" href="index.html">
+              App
+            </a>
+          
+            <a class="navbar-item is-hoverable" href="about.html">
+              About
+            </a>
+    
+            <a class="navbar-item has-text-weight-bold">
+              Documentation
+            </a>
+          </div> <!-- end navbar-start -->
+        </div>
+      </nav>
+
+    Initially, I wanted to do some sort of "chat bot" where the dropdown selects your question and the robot will answer, using a audio visualizer as the mouth. 
+
+    First, I disabled all the selectors (for now)
+    this includes show gradient, bars, circles, noise, invert colors, and emboss-cb
+
+    The only thing that will be constant is the robot face. 
+
+    added eyes, which are a gradient of red in the middle-bottom, and black on the edges. Yes, this is a HAL 9000 reference. 
+    added trapezoid eyelids that jump up and down with the overall average audio. 
+
+    Added a bar based mouth that goes off of byte frequency data
+
+    added a button to choose whether the robot is using byte frequency or byte time domain data.
+
+    added high shelf filter and low shelf filter
+
+    move it to voices
+
+    moved eyelids to class system
+
+    moved eyeballs to the class system
+
+    eyeball color now pulsates along with the audio
+
+    all sliders are vertical now, to fit more
+
+
+    added eyeball color sliders, default is white
+
+    added json reader, reads title, file names / paths, and default volume value.
+    
+<script src="./src/navbar-menu.js"></script>
+</body>
+</html>

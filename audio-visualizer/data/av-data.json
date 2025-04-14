@@ -1,0 +1,20 @@
+{
+    "title" : "Future Singing Robot",
+    "audio" : {
+        "1" : {
+            "title" : "New Adventure Theme",
+            "path" : "media/New Adventure Theme.mp3"
+        },
+        "2" : {
+            "title" : "Peanuts Theme",
+            "path" : "media/Peanuts Theme.mp3"
+        },
+        "3" : {
+            "title" : "The Picard Song",
+            "path" : "media/The Picard Song.mp3"
+        }
+    },
+    "default-values" : {
+        "volume" : 1
+    }
+}
